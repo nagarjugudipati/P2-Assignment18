@@ -1,0 +1,52 @@
+﻿﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>HTML Client</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 class="text-center bg-warning text-white m-2">Movie List</h1>
+    <ul id="movieList" class="bg-primary text-white"></ul>
+    <hr />
+
+    <h2>Create Movie</h2>
+    <form id="createMovie" class="m-2" style="margin-left:25%">
+        <label for="name" class="form-label">Movie Name: </label>
+        <input type="text" class="form-control" id="name" name="name" required /><br />
+        <label for="genre" class="form-label">Genre: </label>
+        <input type="text" id="genre" name="genre" class="form-control" /><br />
+        <label for="rating" class="form-label">Rating: </label>
+        <input type="number" step="any" id="rating" name="rating" class="form-control" /><br />
+        <label for="releaseDate" class="form-label">Release Date: </label>
+        <input type="date" class="form-control" id="releaseDate" name="releaseDate" required /><br />
+        <button type="submit" class="btn btn-primary text-white">Create Movie</button>
+    </form>
+
+    <h2>Update Movie</h2>
+    <form id="updateMovie" class="m-2" style="margin-left:25%">
+        <label for="movieId" class="form-label">Movie ID:</label>
+        <input type="number" class="form-control" id="movieId" required /><br />
+        <label for="newname" class="form-label">Movie Name: </label>
+        <input type="text" class="form-control" id="newname" name="newname" required /><br />
+        <label for="newgenre" class="form-label">Genre: </label>
+        <input type="text" id="newgenre" name="newgenre" class="form-control" /><br />
+        <label for="newrating" class="form-label">Rating: </label>
+        <input type="number" step="any" id="newrating" name="newrating" class="form-control" /><br />
+        <label for="newreleaseDate" class="form-label">Release Date: </label>
+        <input type="date" class="form-control" id="newreleaseDate" name="newreleaseDate" required /><br />
+        <button type="submit" class="btn btn-primary text-white">Update Movie</button>
+    </form>
+
+    <h2>Delete Movie</h2>
+    <form id="deleteMovie" class="m-2" style="margin-left:25%">
+        <label for="deleteMovieId" class="form-label">Movie ID:</label>
+        <input type="number" class="form-control" id="deleteMovieId" required /><br />
+        <button type="submit" class="btn btn-primary text-white">Delete Movie</button>
+    </form>
+    <script src="js/MovieScript.js"></script>
+</body>
+</html>
